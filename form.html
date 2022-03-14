@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: darkturquoise;
+            }
+            hr,h2{
+               width: 90%; 
+               text-align: center;
+            }
+            label{
+                padding: 77px;
+                margin-top: 30px;
+                
+            }
+            input.textType{
+                width: 90%;
+                height: 35px;
+                margin-left: 75px; 
+                margin-bottom: 20px; 
+                border: 0;
+            }
+            .radios{
+                margin-left: 75px;
+                margin-top: 10px
+            }
+            textArea{
+                width: 90%;
+                height: 90px;
+                margin-left: 75px;
+                border: 0;
+            }
+            .bolds{
+                font-weight: bold;
+            }
+            .btn{
+                width: 85%;
+                height: 35px;
+                margin-left: 75px;
+                margin-top: 20px;
+                background-color: green;
+                color: #eee;
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <h2>Student Registeration Form</h2>
+            <hr>
+            <label>
+                Firstname:
+            </label><br>
+            <input class="textType" type="text" placeholder="Firstname" required><br>
+            <label>
+                Middlename:
+            </label><br>
+            <input class="textType" type="text" placeholder="Middlename" required><br>
+            <label>
+                Lastname:
+            </label><br>
+            <input class="textType" type="text" placeholder="Lastname" required><br>
+            <label>
+                Course:
+            </label>
+            <select>
+                <option>course</option>
+                <option>java</option>
+                <option>php</option>
+                <option>java script</option>
+                <option>c++</option>
+            </select><br>
+            
+            <label>
+                Gender:
+            </label><br>
+            <div class="radios">
+                
+                <input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other
+            
+            </div><br>
+            <label>
+                Phone:
+            </label><br>
+            <input class="textType" type="tel" value="+93" readonly><br>
+            <input class="textType" type="tel" placeholder="phone no" required><br>
+            <label>
+                Current Address:
+            </label><br>
+            <textarea class="textType" placeholder="Current Address"></textarea><br>
+            <label class="bolds">
+                Email:
+            </label><br>
+          
+                <input class="textType" type="email" placeholder="Enter Email" required><br>
+            <label class="bolds">    
+                Password:
+            </label><br>
+            
+            <input class="textType" type="password" placeholder="Enter password" minlength="8" required><br>
+            <label class="bolds">
+                Re-type Password:
+            </label><br>
+            <input class="textType" type="password" placeholder="Retype password"><br>
+           
+            <input class="btn" type="submit" value="Register">
+        </form>
+    </body>
+</html>
